@@ -93,7 +93,6 @@ export default class Mine extends Component {
 
     render() {
         return (
-            <SafeAreaView>
             <View style={styles.container}>
                 <Image source={require('../images/222.png')} style={{position:'absolute',left:0,top:0,width:ScreenWidth,height:ScreenHeight,marginTop:-60,opacity:0.5,alignItems:'center'}}/>
                 <View style={{opacity:1.0, width:ScreenWidth - 100,height:ScreenHeight-300,marginTop:100,alignItems:'center'}}>
@@ -144,7 +143,6 @@ export default class Mine extends Component {
                 </View>
 
             </View>
-            </SafeAreaView>
         );
     }
 }
