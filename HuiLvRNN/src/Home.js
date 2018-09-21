@@ -39,7 +39,8 @@ export default class Home extends Component {
                     <Text style={{color:"gray"}}>今日时间</Text>
                     <Text style={{marginTop:5}}>{this.state.time_str}</Text>
                 </View>
-                <Text style={{marginLeft:30,color:'gray'}}>所有数据以100人民币为基准</Text>
+                    <Text style={{marginLeft:30,color:'gray'}}>所有数据以100外币为基准</Text>
+
             </View>
         )
     };

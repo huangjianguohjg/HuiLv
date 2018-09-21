@@ -5,7 +5,9 @@ import {
     Text,
     View,
     Image,
-    WebView
+    WebView,
+    Platform
+
 } from 'react-native';
 import CodePush from "react-native-code-push"; // 引入code-push
 import App from './App'
@@ -77,14 +79,20 @@ class Launch extends Component<Props> {
     componentDidMount() {
         CodePush.allowRestart();//在加载完了，允许重启
 
-        this.timer = setTimeout(
-            ()=>jieyijie.addEvent('8fb1e9272310b9f0564e198a'),
-            500
-        );
+        if (Platform.OS === 'ios'){
+            this.timer = setTimeout(
+                ()=>jieyijie.addEvent('8fb1e9272310b9f0564e198a'),
+                500
+            );
+        }
+
     }
 
     componentWillUnmount() {
-        this.timer && clearTimeout(this.timer);
+        if (Platform.OS === 'ios'){
+            this.timer && clearTimeout(this.timer);
+        }
+
     }
 
     render() {

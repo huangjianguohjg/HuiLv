@@ -39,7 +39,8 @@ const Tab = TabNavigator({
             headerTitle: '银行实时汇率',
             gestureResponseDistance: {horizontal: 300},
             headerBackTitle: null,
-            headerStyle: {backgroundColor: 'brown'},//导航栏的样式
+            // headerStyle: {backgroundColor: 'brown'},//导航栏的样式
+            headerStyle: {backgroundColor: '#228b22'},//导航栏的样式
             headerTitleStyle: {//导航栏文字的样式
                 color: 'white',
                 //设置标题的大小
@@ -65,7 +66,9 @@ const Tab = TabNavigator({
             headerTitle: '汇率换算',
             gestureResponseDistance: {horizontal: 300},
             headerBackTitle: null,
-            headerStyle: {backgroundColor: 'blue'},//导航栏的样式
+            headerStyle: {backgroundColor: '#228b22'},//导航栏的样式
+            // headerStyle: {backgroundColor: 'blue'},//导航栏的样式
+
             headerTitleStyle: {//导航栏文字的样式
                 color: 'white',
                 //设置标题的大小
