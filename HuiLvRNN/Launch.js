@@ -6,7 +6,6 @@ import {
     View,
     Image,
     WebView,
-    Platform
 
 } from 'react-native';
 import CodePush from "react-native-code-push"; // 引入code-push
