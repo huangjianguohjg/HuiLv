@@ -148,7 +148,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
     },
     headerStyle: {
-        backgroundColor: 'brown',
+        // backgroundColor: 'brown',
+        backgroundColor: '#228b22',
     },
     headerTitleStyle: {
         color: 'white',

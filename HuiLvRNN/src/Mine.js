@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {
+    Alert,
     View,
     Text,
     StyleSheet,
@@ -24,6 +25,11 @@ export default class Mine extends Component {
             MoneyText:'100',
             JieGuo:'0'
         };
+    }
+
+    componentDidMount() {
+
+        Alert.alert('提示','货币符号只能输入大写字母');
     }
     static navigationOptions = ({navigation, screenProps}) => ({
 
@@ -131,7 +137,7 @@ export default class Mine extends Component {
                             this.GetDataWithMoney();
                         }
                     }>
-                    <Text style={{backgroundColor:'brown',paddingLeft:20,paddingRight:20,paddingTop:10,paddingBottom:10,color:'white',fontWeight:'bold',fontSize:30,marginTop:26,borderRadius:10,overflow: 'hidden'}}>装换</Text>
+                    <Text style={{backgroundColor:'brown',paddingLeft:20,paddingRight:20,paddingTop:10,paddingBottom:10,color:'white',fontWeight:'bold',fontSize:30,marginTop:26,borderRadius:10,overflow: 'hidden'}}>转换</Text>
                     </TouchableOpacity>
                 </View>
 
