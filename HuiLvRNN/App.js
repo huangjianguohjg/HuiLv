@@ -210,7 +210,7 @@ export default Drawer = DrawerNavigator({
     },
 
 }, {
-    drawerWidth: 0, // 展示的宽度
+    drawerWidth: 1, // 展示的宽度
     drawerPosition: 'right', // 抽屉在左边还是右边
     // contentOptions: {
     //     // activeTintColor: 'black',  // 选中文字颜色
